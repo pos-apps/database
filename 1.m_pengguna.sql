@@ -17,3 +17,6 @@ CREATE TABLE m_pengguna (
     status INT(1) DEFAULT 0,
     parent INT(11) DEFAULT 0
 );
+
+ALTER TABLE m_pengguna ADD username VARCHAR(100) NOT NULL AFTER parent;
+ALTER TABLE m_pengguna ADD password VARCHAR(255) NOT NULL AFTER username;
